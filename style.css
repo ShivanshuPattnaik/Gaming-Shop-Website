@@ -1,0 +1,234 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    background-color: rgba(167, 167, 167, 0.247);
+}
+
+/* Navigation */
+#navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* Logo and NavItems */
+#logo img {
+    width: 100px;
+    height: 40px;
+    margin: 10px 25px;
+}
+#navbar ul {
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 0px;
+}
+#navbar ul li {
+    list-style: none;
+}
+#navbar ul li a {
+    font-size: 1.1rem;
+    /* display: block; */
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-family: Squada One;
+    transition: all;
+    transition-duration: 0.3s;
+}
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+}
+
+/* Section */
+.home {
+    display: flex;
+    height: 660px;
+    flex-direction: column;
+    align-items: center;
+}
+.home::before {
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    height: 625px;
+    width: 100%;
+    opacity: 1;
+    z-index: -2;
+    background: url("img/bg.jpg") no-repeat center center/cover;
+    background-position: 0px -50px;
+}
+#logoHome img {
+    width: 500px;
+    height: 200px;
+    margin-top: 100px;
+}
+.heading {
+    font-family: Squada One;
+    text-align: center;
+    font-size: 1.78rem;
+    color: white;
+    padding: 10px 10px;
+    text-shadow: 1px 1px 2px black;
+}
+.discount {
+    font-family: Squada One;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    padding: 30px 20px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Button */
+.btn {
+    width: 120px;
+    height: 70px;
+    font-size: 20px;
+    padding: 20px 20px;
+    font-family: Squada One;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid rgb(144, 25, 173);
+    border-radius: 20px;
+    color: white;
+    margin-top: 40px;
+    box-shadow: 2px 2px 2px 0px black;
+    transition: transform;
+    transition-duration: 0.3s;
+}
+.btn:hover {
+    cursor: pointer;
+    transform:scale(1.2);
+}
+
+.benefits h1{
+    font-family: Squada One;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(189, 0, 189);
+    text-shadow: 1px 1px 2px black;
+}
+.container {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+.container div {
+    border: 5px solid rgb(204, 0, 255);;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 30px;
+    background-color: rgb(186, 5, 192);
+    box-shadow: 2px 2px 2px 0px black;
+}
+.container .box1 {
+    width: 350px;
+}
+.container .box2 {
+    width: 350px;
+}
+.container .box3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 350px;
+    height: 410.2px;
+}
+.container .box1 img {
+    width: 350px;
+    height: 200px;
+}
+.container .box2 img {
+    width: 350px;
+    height: 200px;
+}
+.container .box3 img {
+    width: 200px;
+    height: 200px;
+}
+.container div h2 {
+    margin-top: 10px;
+}
+
+.supporters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.supporters div {
+    margin: 20px;
+}
+.supporters .s1 img{
+    width: 270px;
+}
+.supporters .s2 img{
+    width: 250px;
+    margin-top: 30px;
+}
+.supporters .s3 img{
+    width: 100px;
+}
+.supporters .s4 img{
+    width: 150px;
+}
+
+.h-secondary {
+    font-family: Squada One;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.h-primary {
+    font-family: Squada One;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+.p-class {
+    margin: 10px;
+    font-family: Squada One;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.ourSupporters {
+    font-family: Squada One;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(189, 0, 189);
+    text-shadow: 1px 1px 2px black;
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: rgba(186, 5, 192, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    padding: 50px 50px;
+}
